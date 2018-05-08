@@ -67,7 +67,7 @@ public class GoodRead {
         out.println(sb.toString());
         out.close();
 
-        copyFile("source/style.css", desc_dir);
+        copyFile("resources/style.css", desc_dir);
     }
 
     //有序列表
