@@ -25,9 +25,9 @@ public class File2Html {
 	
 //	程序思路：构造一个随机的标签树，然后打印输出，每个标签节点在打印时顺便打印源文件的一行。
 	public static void main(String[] args) throws Exception {
-		File file = new File("E:/BaiduYunDownload/哈利波特7部完结/6,哈利波特与混血王子.txt");
+		File file = new File("d:/a.txt");
 		FileInputStream is = new FileInputStream(file);
-		reader = new BufferedReader(new InputStreamReader(is , "GB18030"));
+		reader = new BufferedReader(new InputStreamReader(is , "utf-8"));
 		File2Html test = new File2Html();
 		
 		StringBuilder rtn = new StringBuilder();
@@ -43,7 +43,7 @@ public class File2Html {
 			rtn.append(test.go(children).toString() + '\n');
 		}
 		
-		PrintWriter out = new PrintWriter("E:/BaiduYunDownload/哈利波特7部完结/t.txt");
+		PrintWriter out = new PrintWriter("d:/t.txt");
 		out.println(rtn);
 		out.close();
 	}

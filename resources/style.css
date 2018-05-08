@@ -1,0 +1,19 @@
+body {
+	font-family: 'Open Sans', Helvetica, Tahoma, Arial, Hiragino Sans GB,
+		"Microsoft YaHei", "Î¢ÈíÑÅºÚ", "Micro Hei", SimSun, "ËÎÌå", Heiti, "ºÚÌå",
+		sans-serif;
+	font-weight: normal;
+	color: #333;
+}
+
+blockquote {
+	border-left-width: 10px;
+	background-color: rgba(128, 128, 128, .05);
+	border-left: 10px solid #D6DBDF;
+	padding: 10px 15px;
+	margin: 0 0 20px;
+}
+
+span {
+	background-color: #84B9EF;
+}

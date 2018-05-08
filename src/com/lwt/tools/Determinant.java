@@ -2,7 +2,6 @@ package com.lwt.tools;
 
 import com.lwt.util.Debug;
 import com.lwt.util.ToPrint;
-import com.sun.xml.txw2.IllegalAnnotationException;
 
 /**
  * @author liu
@@ -17,7 +16,7 @@ public class Determinant {
 		this.n = determinant.length;
 		for(int i=0; i<n; i++){
 			if(n != determinant[i].length){
-				throw new IllegalAnnotationException("行列式的第" + i+1 + "行元素个数错误！");
+				throw new IllegalArgumentException("行列式的第" + i+1 + "行元素个数错误！");
 			}
 		}
 		this.determinant = determinant;
